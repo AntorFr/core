@@ -1,6 +1,6 @@
 name: Build Home Assistant with ESPHome Water Heater
 
-on:
+"on":
   push:
     branches:
       - esphome-waterheater
