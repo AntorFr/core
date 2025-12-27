@@ -1,0 +1,4 @@
+FROM ghcr.io/home-assistant/home-assistant:2024.12
+
+# Copy the water_heater.py file to the esphome component
+COPY homeassistant/components/esphome/water_heater.py /usr/src/homeassistant/homeassistant/components/esphome/water_heater.py
