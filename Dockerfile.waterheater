@@ -1,4 +1,8 @@
-FROM ghcr.io/home-assistant/home-assistant:2024.12
+FROM ghcr.io/home-assistant/home-assistant:2025.12.4
 
 # Copy the water_heater.py file to the esphome component
 COPY homeassistant/components/esphome/water_heater.py /usr/src/homeassistant/homeassistant/components/esphome/water_heater.py
+
+# Set labels
+LABEL org.opencontainers.image.source="https://github.com/AntorFr/core"
+LABEL org.opencontainers.image.description="Home Assistant with ESPHome Water Heater support"
